@@ -24,7 +24,7 @@
                         <div class="col-md-12">
                             <div class="d-flex no-block align-items-center">
                                 <div class="ml-auto">
-                                    <a href="javascript:void(0)" id="to-recover" class="text-muted"><i class="fas fa-lock m-r-5"></i> Esqueci a senha?</a> 
+                                    <a href="{{route('forgot')}}" id="to-recover" class="text-muted"><i class="fas fa-lock m-r-5"></i> Esqueci a senha?</a> 
                                 </div>
                             </div>
                             <p class="register-alert" id="check_alert">Por favor, checar isto.</p>
@@ -38,31 +38,6 @@
                     <div class="form-group m-b-0">
                         <div class="col-sm-12 text-center">
                           Você não tem uma conta? <a href="{{route('reigster')}}" class="text-info m-l-5"><b>Se inscreva</b></a>
-                        </div>
-                    </div>
-                </form>
-                <form class="form-horizontal" id="recoverform" action="index.html">
-                    <div class="form-group ">
-                        <div class="col-xs-12">
-                            <h3>Recuperar senha</h3>
-                            <p class="text-muted">Digite seu e-mail e as instruções serão enviadas para você!</p>
-                        </div>
-                    </div>
-                    <div class="form-group ">
-                        <div class="col-xs-12">
-                            <input class="form-control" type="text" required="" placeholder="O email"> </div>
-                    </div>
-                    <div class="form-group ">
-                        <div class="col-xs-12">
-                            <input class="form-control" type="text" required="" placeholder="Nova Senha"> </div>
-                    </div>
-                    <div class="form-group ">
-                        <div class="col-xs-12">
-                            <input class="form-control" type="text" required="" placeholder="Confirme a Senha"> </div>
-                    </div>
-                    <div class="form-group text-center m-t-20">
-                        <div class="col-xs-12">
-                            <button class="btn btn-primary btn-lg btn-block text-uppercase waves-effect waves-light" type="submit">Redefinir</button>
                         </div>
                     </div>
                 </form>

@@ -7,5 +7,7 @@ use Illuminate\Http\Request;
 
 class ForgotController extends Controller
 {
-    //
+    public function Index() {
+        return view('auth\forgot');
+    }
 }

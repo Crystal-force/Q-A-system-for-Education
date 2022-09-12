@@ -22,6 +22,7 @@ Route::post('/login', 'Auth\LoginController@LogIn');
 Route::get('/register', 'Auth\RegisterController@Index')->name('reigster');
 Route::post('/register', 'Auth\RegisterController@Register');
 Route::get('/logout', 'Auth\LoginController@LogOut')->name('logout');
+Route::get('/forgot', 'Auth\ForgotController@Index')->name('forgot');
 
 Route::middleware(['auth', 'role'])->group(function(){
     // Admin page
